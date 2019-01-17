@@ -1,0 +1,9 @@
+.about__list li {
+  margin-block-end: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about__list li p {
+  margin-inline-end: 5px;
+}

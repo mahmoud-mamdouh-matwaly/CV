@@ -1,0 +1,45 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+}
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+.header__navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__navigation__item {
+  margin-inline-end: 15px;
+  text-transform: capitalize;
+}
+.header__navigation__item a {
+  position: relative;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header__navigation__item a[aria-current]::after {
+  content: "";
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
